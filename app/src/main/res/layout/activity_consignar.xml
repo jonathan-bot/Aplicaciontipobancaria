@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsignarActivity"
+    android:background="@drawable/background_404">
+
+    <TextView
+        android:id="@+id/regresar"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_volver"
+        android:drawablePadding="5dp"
+        />
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese el monto a consignar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <EditText
+        android:background="@drawable/ic_depositar"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/icon_logo"
+        android:layout_below="@+id/txt1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+    <EditText
+        android:id="@+id/et1"
+        android:layout_below="@id/icon_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background_text"/>
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/icon_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Costo de la transacción: $2.000"/>
+    <Button
+        android:id="@+id/consignarbutton"
+        android:layout_below="@id/et1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consignar"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button"/>
+
+</RelativeLayout>

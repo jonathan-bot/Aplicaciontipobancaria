@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_404">
+
+    <TextView
+        android:id="@+id/icon_bank"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_bank"
+        android:layout_width="180dp"
+        android:layout_height="180dp"/>
+    <EditText
+        android:id="@+id/correo"
+        android:layout_below="@+id/icon_bank"
+        android:hint="Correo electronico"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/background_text"
+        android:drawableLeft="@drawable/ic_correo"
+        android:layout_margin="30dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:layout_width="320dp"/>
+    <EditText
+        android:id="@+id/contra"
+        android:layout_below="@id/correo"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:background="@drawable/background_text"
+        android:drawableLeft="@drawable/ic_contra"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:layout_width="300dp"/>
+    <Button
+        android:layout_below="@id/contra"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_button"
+        android:id="@+id/btningresar"
+        android:text="Ingresar"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/btningresar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv1"
+        android:text="¿Nuevo Usuario?"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnregistrarse"
+        android:text="Registrarse"
+        android:background="@drawable/background_button"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="1dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
